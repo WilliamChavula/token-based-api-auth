@@ -1,5 +1,5 @@
 {
-  "name": "fastify-token-auth",
+  "name": "nodejs-fastify-starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
