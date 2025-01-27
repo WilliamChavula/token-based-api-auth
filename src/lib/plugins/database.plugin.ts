@@ -1,6 +1,6 @@
 import { FastifyInstance, FastifyPluginAsync } from "fastify";
 import fp from "fastify-plugin";
-import { db } from "../auth/models/connect";
+import { db } from "../db";
 
 const dbPlugin: FastifyPluginAsync = async (fastify: FastifyInstance) => {
   try {

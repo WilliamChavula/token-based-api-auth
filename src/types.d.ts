@@ -1,4 +1,4 @@
-import { TPostgresDataBase } from "./lib/auth/models/connect";
+import { TPostgresDataBase } from "./lib/db";
 import { TAuthService } from "./lib/auth/services";
 
 declare module "fastify" {
