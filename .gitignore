@@ -186,7 +186,6 @@ dist
 
 # vuepress v2.x temp and cache directory
 .temp
-.cache
 
 # Docusaurus cache and generated files
 .docusaurus
@@ -213,3 +212,12 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# docker
+src/lib/db/db-volume/
+
+# drizzle
+migrations/
+
+
+# http
+http-client.private.env.json
