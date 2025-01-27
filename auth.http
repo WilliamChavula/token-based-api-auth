@@ -1,0 +1,13 @@
+### GET request to api health endpoint
+GET {{BASE_URL}}/health
+
+### POST request to api /sign-in endpoint
+POST {{BASE_URL}}/auth/sign-up
+Content-Type: application/json
+
+{
+  "firstName": "{{$random.name.firstName}}",
+  "lastName": "{{$random.name.lastName}}",
+  "email": "{{$random.internet.emailAddress}}",
+  "password": "{{$random.internet.password}}"
+}
