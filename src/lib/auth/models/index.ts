@@ -4,6 +4,7 @@ import {
   varchar,
   timestamp,
   index,
+  integer,
 } from "drizzle-orm/pg-core";
 
 export const usersTable = pgTable("users", {
@@ -21,7 +22,7 @@ export const tokenTable = pgTable(
   "tokens",
   {
     tokenId: varchar("token_id").primaryKey().notNull(),
-    userId: varchar("user_id", { length: 30 }).notNull(),
+    userId: integer("user_id").notNull(),
     expiry: timestamp().notNull(),
   },
   (table) => {
