@@ -1,7 +1,7 @@
 ### GET request to api health endpoint
 GET {{BASE_URL}}/health
 
-### POST request to api /sign-in endpoint
+### POST request to api /sign-up endpoint
 POST {{BASE_URL}}/auth/sign-up
 Content-Type: application/json
 
@@ -11,3 +11,18 @@ Content-Type: application/json
   "email": "{{$random.internet.emailAddress}}",
   "password": "{{$random.internet.password}}"
 }
+
+### POST request to api /sign-up endpoint
+POST {{BASE_URL}}/auth/sign-in
+Content-Type: application/json
+
+{
+  "email": "{{user-1.USER_EMAIL}}",
+  "password": "{{user-1.USER_PWD}}"
+}
+
+> {% client.global.set("auth_token", response.body["token"]); %}
+
+### POST request to /sign-out endpoint
+POST {{BASE_URL}}/auth/sign-out
+Authorization: Bearer {{auth_token}}
