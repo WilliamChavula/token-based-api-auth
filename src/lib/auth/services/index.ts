@@ -95,7 +95,6 @@ export default fp(async function (fastify: FastifyInstance) {
       const tokenHash = tokenRaw.substring(tokenIndex + 1);
 
       const computedHash = tokenStore.computeHash(tokenData.tokenId);
-      console.log({ computedHash, tokenHash });
 
       if (!tokenStore.compareHash(tokenHash, computedHash)) return null;
 

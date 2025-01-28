@@ -66,8 +66,6 @@ export default function (fastify: FastifyInstance) {
 
       const tokenHMac = tokenStore.hmacToken(token);
 
-      console.log({ token: tokenHMac });
-
       reply.send({ token: tokenHMac });
     },
   });
