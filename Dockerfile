@@ -9,6 +9,6 @@ RUN pnpm install --frozen-lockfile
 
 RUN pnpm build
 
-EXPOSE 80
+EXPOSE 7500
 
 CMD ["node", "dist/src/index.js"]
