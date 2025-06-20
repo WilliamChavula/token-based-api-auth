@@ -11,6 +11,9 @@
     "start": "node ./dist/src/index.js",
     "lint:fix": "pnpm exec eslint --fix"
   },
+  "engines": {
+    "node": ">=18.18.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
