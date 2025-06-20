@@ -9,6 +9,7 @@ rm -rf node_modules pnpm-lock.json
 npm install --legacy-peer-deps
 
 # Optional: run build if you have TypeScript or bundler
+echo $(node -v)
 npx tsc
 
 # Start the app
