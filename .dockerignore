@@ -1,0 +1,9 @@
+.idea
+.vscode
+
+compose.yml
+auth.http
+.gitignore
+http-client-*
+
+node_modules
