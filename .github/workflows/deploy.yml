@@ -22,8 +22,7 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install -g npm@latest &&
-          npm install -g pnpm &&
-          pnpm install --frozen-lockfile
+          npm install --legacy-peer-deps
 
       - name: Build Project
         run: npm run build
