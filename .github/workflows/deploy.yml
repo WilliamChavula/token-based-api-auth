@@ -19,7 +19,10 @@ jobs:
           node-version: 22
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install -g npm@latest &&
+          npm install -g pnpm &&
+          pnpm install --frozen-lockfile
 
       - name: Build Project
         run: npm run build
